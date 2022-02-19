@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="TheMovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activity" destination="v0P-3S-jlx" id="FSg-Lo-T4U"/>
+                <outlet property="tableView" destination="WLA-km-Ws8" id="C51-iP-6xV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WLA-km-Ws8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="K45-hC-hmI"/>
+                        <outlet property="delegate" destination="-1" id="gD6-c6-7qZ"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="v0P-3S-jlx">
+                    <rect key="frame" x="188.5" y="276" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="CsD-Nb-WHG"/>
+                        <constraint firstAttribute="height" constant="37" id="VbZ-TW-P3i"/>
+                    </constraints>
+                    <color key="color" systemColor="systemPurpleColor"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="v0P-3S-jlx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1e3-In-g15"/>
+                <constraint firstAttribute="bottom" secondItem="WLA-km-Ws8" secondAttribute="bottom" id="CPE-Nu-5Bl"/>
+                <constraint firstItem="WLA-km-Ws8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ICg-4e-Ho1"/>
+                <constraint firstItem="WLA-km-Ws8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fgM-7E-9SO"/>
+                <constraint firstItem="WLA-km-Ws8" firstAttribute="centerX" secondItem="v0P-3S-jlx" secondAttribute="centerX" id="lnQ-I5-VQe"/>
+                <constraint firstItem="v0P-3S-jlx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="232" id="pdM-qL-bkD"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
